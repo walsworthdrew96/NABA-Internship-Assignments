@@ -14,10 +14,6 @@ The projects listed here were created during my internship at New American Busin
 * React (For dynamic front end webpage design)
 * EPPlus (For Excel Files)
 
-[TOCM]
-
-[TOC]
-
 ## Console App
 - Console App with the ability to read and write from a Text File (.txt), an Excel File (.xlsx), and an SQL Server Database.
 
@@ -25,6 +21,7 @@ The projects listed here were created during my internship at New American Busin
 - WPF App with the ability to read and write from a Text File (.txt), an Excel File (.xlsx), MS Access, MS SQL Server and an Azure SQL Database.
 
 ###SQL Database Contents
+
 ####Person Table
 First  Name  | Last Name
 ------------- | -------------
