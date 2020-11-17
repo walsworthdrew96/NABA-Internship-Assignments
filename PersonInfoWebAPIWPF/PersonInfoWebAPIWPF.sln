@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonInfoWebAPIWPF", "PersonInfoWebAPIWPF\PersonInfoWebAPIWPF.csproj", "{52F7DA6C-0547-4BD4-8AFD-2CDA9D3F2605}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonInfoWPFApp", "PersonInfoWPFApp\PersonInfoWPFApp.csproj", "{FB205EDD-E9EF-4F44-83A8-8A0D8EA2A7D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52F7DA6C-0547-4BD4-8AFD-2CDA9D3F2605}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52F7DA6C-0547-4BD4-8AFD-2CDA9D3F2605}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52F7DA6C-0547-4BD4-8AFD-2CDA9D3F2605}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52F7DA6C-0547-4BD4-8AFD-2CDA9D3F2605}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB205EDD-E9EF-4F44-83A8-8A0D8EA2A7D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB205EDD-E9EF-4F44-83A8-8A0D8EA2A7D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB205EDD-E9EF-4F44-83A8-8A0D8EA2A7D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB205EDD-E9EF-4F44-83A8-8A0D8EA2A7D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ACDA1577-29E8-4A9B-A851-6759821F4DC8}
+	EndGlobalSection
+EndGlobal
