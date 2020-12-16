@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OghT7aoltahBvf0AXm+SZgK+Oghr+8LUL+J4IMZjmzey3D6nxpwrVAoQRpuufQkw47kldMiJ3yjeOz7KpqvA0Q==",
+  "dgSpecHash": "EVop9CYYnEukbglNkbsE4GZga+bjMxvxVLnqfB0N2Yv57bNdQabay6o1TyrqYhUhaZzft/q3/dPxYv1j+Jk9Gw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Drew\\source\\repos\\PersonInfoConsoleApp\\PersonInfoConsoleApp\\PersonInfoConsoleApp.csproj",
+  "projectFilePath": "C:\\Users\\Drew\\Desktop\\NABA Assignments\\deployment\\PersonInfoSQLServerConsoleApp\\PersonInfoConsoleApp\\PersonInfoConsoleApp\\PersonInfoConsoleApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Drew\\.nuget\\packages\\epplus\\5.4.1\\epplus.5.4.1.nupkg.sha512",
     "C:\\Users\\Drew\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.5\\microsoft.extensions.configuration.3.1.5.nupkg.sha512",

@@ -27,7 +27,7 @@ namespace PersonInfoWebAPIWPF.Data
             return new OleDbConnection();
         }
 
-        IConfigurationRoot GetConfiguration()
+        private IConfigurationRoot GetConfiguration()
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
@@ -39,7 +39,11 @@ namespace PersonInfoWebAPIWPF.Data
         {
             var configuration = GetConfiguration();
             var conStrings = configuration.GetSection("ConnectionStrings");
-            _msAccessConnectionString = conStrings.GetSection("msAccessConnection").Value;
+            Console.WriteLine(Environment.CurrentDirectory);
+            string access_db_file_name = "naba_db.accdb";
+            string access_db_path = System.IO.Path.Combine(Environment.CurrentDirectory, @"..\PersonInfoWPFApp\Files\", access_db_file_name);
+            //_msAccessConnectionString = conStrings.GetSection("msAccessConnection").Value;
+            _msAccessConnectionString = $"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Provider=Microsoft.ACE.OLEDB.12.0;Data Source={access_db_path};Persist Security Info=True;Persist Security Info=False;";
             _msSqlConnectionString = conStrings.GetSection("msSqlConnection").Value;
             _azureSqlConnectionString = conStrings.GetSection("azureSqlConnection").Value;
         }
@@ -267,6 +271,7 @@ namespace PersonInfoWebAPIWPF.Data
             }
             return;
         }
+
         public async Task UpdateById(int Id, Person person, string dbSelection)
         {
             if (dbSelection == "msAccessConnection")

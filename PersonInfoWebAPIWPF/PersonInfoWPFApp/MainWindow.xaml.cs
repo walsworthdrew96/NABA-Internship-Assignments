@@ -23,7 +23,6 @@ using System.IO;
 using Newtonsoft.Json;
 using System.Net.Http.Headers;
 
-
 namespace PersonInfoWPFApp
 {
     /// <summary>
@@ -32,8 +31,9 @@ namespace PersonInfoWPFApp
     public partial class MainWindow : Window
     {
         private PersonAccess pa;
+
         //Set the scope for API call to user.read
-        string[] scopes = new string[] { "user.read" };
+        private string[] scopes = new string[] { "user.read" };
 
         private string txt_file_name = "full_name.txt";
         private string xlsx_file_name = "full_name.xlsx";
@@ -79,7 +79,7 @@ namespace PersonInfoWPFApp
             }
         }
 
-        async void GetAll(string url)
+        private async void GetAll(string url)
         {
             try
             {
@@ -116,7 +116,7 @@ namespace PersonInfoWPFApp
             MessageTextBlock.Text += "GET Request Completed Successfully.";
         }
 
-        async void GetById(string url)
+        private async void GetById(string url)
         {
             try
             {
@@ -140,7 +140,7 @@ namespace PersonInfoWPFApp
             MessageTextBlock.Text += "GET Request Completed Successfully.";
         }
 
-        async void PostRequest(string url)
+        private async void PostRequest(string url)
         {
             try
             {
@@ -148,7 +148,7 @@ namespace PersonInfoWPFApp
                 Person p = new Person
                 {
                     FirstName = FirstNameTextBox.Text,
-                    LastName = LastNameTextBox.Text 
+                    LastName = LastNameTextBox.Text
                 };
 
                 string jsonString;
@@ -173,7 +173,7 @@ namespace PersonInfoWPFApp
             MessageTextBlock.Text += "POST Request Completed Successfully.";
         }
 
-        async void PutRequest(string url)
+        private async void PutRequest(string url)
         {
             try
             {
@@ -209,7 +209,7 @@ namespace PersonInfoWPFApp
             MessageTextBlock.Text += "PUT Request Completed Successfully.";
         }
 
-        async void DeleteRequest(string url)
+        private async void DeleteRequest(string url)
         {
             try
             {
@@ -423,6 +423,7 @@ namespace PersonInfoWPFApp
             }
             Read_Button_Click(null, null);
         }
+
         private void Select_All_Button_Click(object sender, RoutedEventArgs e)
         {
             if (AccessDbCheckBox.IsChecked == true)
@@ -490,6 +491,7 @@ namespace PersonInfoWPFApp
                 PostRequest($"{url}?dbSelection=azureSqlConnection");
             }
         }
+
         private void Update_By_Id_Button_Click(object sender, RoutedEventArgs e)
         {
             if (!ValidatePersonFormWithId())
@@ -518,6 +520,7 @@ namespace PersonInfoWPFApp
                 PutRequest($"{url}{IdTextBox.Text}?dbSelection=azureSqlConnection");
             }
         }
+
         private void Delete_By_Id_Button_Click(object sender, RoutedEventArgs e)
         {
             if (!ValidatePersonFormWithId())
@@ -566,22 +569,18 @@ namespace PersonInfoWPFApp
 
         private void FirstName_TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
         }
 
         private void LastName_TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
         }
 
         private void TextFile_Checked(object sender, RoutedEventArgs e)
         {
-
         }
 
         private void ExcelFile_Checked(object sender, RoutedEventArgs e)
         {
-
         }
 
         private void AccessDB_Checked(object sender, RoutedEventArgs e)
@@ -622,42 +621,34 @@ namespace PersonInfoWPFApp
 
         private void MessageText_TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
         }
 
         private void SQLDb_Checked(object sender, RoutedEventArgs e)
         {
-
         }
 
         private void AzureDb_Checked(object sender, RoutedEventArgs e)
         {
-
         }
 
         private void IdTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
         }
 
         private void FirstNameTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
         }
 
         private void LastNameTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
         }
 
         private void TempDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
         }
 
         private void SavedDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
         }
     }
 }

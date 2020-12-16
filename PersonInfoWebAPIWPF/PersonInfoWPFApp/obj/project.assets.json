@@ -5079,7 +5079,8 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Newtonsoft.Json >= 12.0.3",
-      "PersonInfoWebAPIWPF >= 1.0.0"
+      "PersonInfoWebAPIWPF >= 1.0.0",
+      "System.Data.OleDb >= 5.0.0"
     ]
   },
   "packageFolders": {
@@ -5090,11 +5091,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Drew\\source\\repos\\PersonInfoWebAPIWPF\\PersonInfoWPFApp\\PersonInfoWPFApp.csproj",
+      "projectUniqueName": "C:\\Users\\Drew\\Desktop\\NABA Assignments\\deployment\\PersonInfoWebAPIWPF\\PersonInfoWPFApp\\PersonInfoWPFApp.csproj",
       "projectName": "PersonInfoWPFApp",
-      "projectPath": "C:\\Users\\Drew\\source\\repos\\PersonInfoWebAPIWPF\\PersonInfoWPFApp\\PersonInfoWPFApp.csproj",
+      "projectPath": "C:\\Users\\Drew\\Desktop\\NABA Assignments\\deployment\\PersonInfoWebAPIWPF\\PersonInfoWPFApp\\PersonInfoWPFApp.csproj",
       "packagesPath": "C:\\Users\\Drew\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Drew\\source\\repos\\PersonInfoWebAPIWPF\\PersonInfoWPFApp\\obj\\",
+      "outputPath": "C:\\Users\\Drew\\Desktop\\NABA Assignments\\deployment\\PersonInfoWebAPIWPF\\PersonInfoWPFApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -5115,8 +5116,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Drew\\source\\repos\\PersonInfoWebAPIWPF\\PersonInfoWebAPIWPF\\PersonInfoWebAPIWPF.csproj": {
-              "projectPath": "C:\\Users\\Drew\\source\\repos\\PersonInfoWebAPIWPF\\PersonInfoWebAPIWPF\\PersonInfoWebAPIWPF.csproj"
+            "C:\\Users\\Drew\\Desktop\\NABA Assignments\\deployment\\PersonInfoWebAPIWPF\\PersonInfoWebAPIWPF\\PersonInfoWebAPIWPF.csproj": {
+              "projectPath": "C:\\Users\\Drew\\Desktop\\NABA Assignments\\deployment\\PersonInfoWebAPIWPF\\PersonInfoWebAPIWPF\\PersonInfoWebAPIWPF.csproj"
             }
           }
         }
@@ -5133,6 +5134,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[12.0.3, )"
+          },
+          "System.Data.OleDb": {
+            "target": "Package",
+            "version": "[5.0.0, )"
           }
         },
         "imports": [

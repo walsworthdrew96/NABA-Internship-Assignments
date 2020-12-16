@@ -5028,11 +5028,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Drew\\source\\repos\\PersonInfoWebAPIWPF\\PersonInfoWebAPIWPF\\PersonInfoWebAPIWPF.csproj",
+      "projectUniqueName": "C:\\Users\\Drew\\Desktop\\NABA Assignments\\deployment\\PersonInfoWebAPIWPF\\PersonInfoWebAPIWPF\\PersonInfoWebAPIWPF.csproj",
       "projectName": "PersonInfoWebAPIWPF",
-      "projectPath": "C:\\Users\\Drew\\source\\repos\\PersonInfoWebAPIWPF\\PersonInfoWebAPIWPF\\PersonInfoWebAPIWPF.csproj",
+      "projectPath": "C:\\Users\\Drew\\Desktop\\NABA Assignments\\deployment\\PersonInfoWebAPIWPF\\PersonInfoWebAPIWPF\\PersonInfoWebAPIWPF.csproj",
       "packagesPath": "C:\\Users\\Drew\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Drew\\source\\repos\\PersonInfoWebAPIWPF\\PersonInfoWebAPIWPF\\obj\\",
+      "outputPath": "C:\\Users\\Drew\\Desktop\\NABA Assignments\\deployment\\PersonInfoWebAPIWPF\\PersonInfoWebAPIWPF\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

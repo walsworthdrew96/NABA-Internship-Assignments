@@ -29,7 +29,7 @@ namespace PersonInfoWPFApp
         public string LastName { get; set; }
 
         //Set the scope for API call to user.read
-        string[] scopes = new string[] { "user.read" };
+        private string[] scopes = new string[] { "user.read" };
 
         private string access_db_file_name;
         private string access_db_path;
@@ -55,7 +55,7 @@ namespace PersonInfoWPFApp
             //connection strings
             msAccessConnectionString = $@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source={access_db_path};Persist Security Info=False;";
             msSQLServerConnectionString = @"Data Source=localhost;Initial Catalog=NABA;Integrated Security=True";
-            azureConnectionString = "Server=tcp:naba-server.database.windows.net,1433;Initial Catalog=naba-db;Persist Security Info=False;User ID=naba-server-admin;Password=rz0f-396v-xr54;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            azureConnectionString = "Server=tcp:naba-server.database.windows.net,1433;Initial Catalog=test-db;Persist Security Info=False;User ID=naba-admin;Password=#{password}#;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
             InitializeComponent();
         }
@@ -248,7 +248,7 @@ namespace PersonInfoWPFApp
 
                 messageTextBox.Text += "Azure SQL Server Connection Open!\n";
                 PersonInfo pi = new PersonInfo(firstNameTextBox.Text, lastNameTextBox.Text);
-                
+
                 messageTextBox.Text += $"PEOPLE IN DATABASE:\n{pi.SelectAll(cnn)}";
 
                 cnn.Close();
@@ -363,42 +363,34 @@ namespace PersonInfoWPFApp
 
         private void FirstName_TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
         }
 
         private void LastName_TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
         }
 
         private void TextFile_Checked(object sender, RoutedEventArgs e)
         {
-
         }
 
         private void ExcelFile_Checked(object sender, RoutedEventArgs e)
         {
-
         }
 
         private void AccessDB_Checked(object sender, RoutedEventArgs e)
         {
-
         }
 
         private void SQLServerDB_Checked(object sender, RoutedEventArgs e)
         {
-
         }
 
         private void AzureSQLDB_Checked(object sender, RoutedEventArgs e)
         {
-
         }
 
         private void MessageText_TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
         }
     }
 }

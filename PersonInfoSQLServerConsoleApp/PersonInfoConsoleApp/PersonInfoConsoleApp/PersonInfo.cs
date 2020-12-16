@@ -8,7 +8,7 @@ using System.Net.Mime;
 
 namespace PersonInfoConsoleApp
 {
-    class PersonInfo
+    internal class PersonInfo
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -86,8 +86,6 @@ namespace PersonInfoConsoleApp
             }
         }
 
-        
-
         public void DisplayNameFromExcelFile(string filePath)
         {
             FileInfo excel_file = new FileInfo(filePath);
@@ -97,7 +95,6 @@ namespace PersonInfoConsoleApp
 
                 var start = worksheet.Dimension.Start;
                 var end = worksheet.Dimension.End;
-
 
                 //Determine max width for each column
                 int[] maxWidthPerCol = new int[end.Column];
@@ -110,9 +107,9 @@ namespace PersonInfoConsoleApp
                     for (int row = start.Row; row <= end.Row; row++)
                     {
                         object cellValue = worksheet.Cells[row, col].Value;
-                        if (cellValue.ToString().Length > maxWidthPerCol[col-1])
+                        if (cellValue.ToString().Length > maxWidthPerCol[col - 1])
                         {
-                            maxWidthPerCol[col-1] = cellValue.ToString().Length;
+                            maxWidthPerCol[col - 1] = cellValue.ToString().Length;
                         }
                     }
                 }
@@ -123,7 +120,7 @@ namespace PersonInfoConsoleApp
                     for (int col = start.Column; col <= end.Column; col++)
                     {
                         object cellValue = worksheet.Cells[row, col].Value;
-                        Console.Write(String.Format("{0,"+(-maxWidthPerCol[col - 1]).ToString()+"}", cellValue));
+                        Console.Write(String.Format("{0," + (-maxWidthPerCol[col - 1]).ToString() + "}", cellValue));
                         if (col != end.Column)
                         {
                             Console.Write(" ");
@@ -148,7 +145,6 @@ namespace PersonInfoConsoleApp
             dataReader = command.ExecuteReader();
             while (dataReader.Read())
             {
-                Console.WriteLine($"dataReader: {dataReader}");
                 Output += $"{dataReader.GetValue(0)} - {dataReader.GetValue(1)}\n";
             }
 

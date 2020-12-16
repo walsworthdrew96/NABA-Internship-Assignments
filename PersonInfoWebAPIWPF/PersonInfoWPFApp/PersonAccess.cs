@@ -1,7 +1,9 @@
-﻿using OfficeOpenXml;
+﻿using Microsoft.Extensions.Configuration;
+using OfficeOpenXml;
 using PersonInfoWebAPIWPF.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.OleDb;
 using System.Data.SqlClient;
 using System.IO;
 using System.IO.Packaging;
@@ -13,7 +15,7 @@ using System.Windows.Media.Animation;
 
 namespace PersonInfoWPFApp
 {
-    class PersonAccess
+    internal class PersonAccess
     {
         public PersonAccess()
         {
@@ -110,7 +112,7 @@ namespace PersonInfoWPFApp
 
                 // Create a dictionary with column count matching the excel file.
                 Dictionary<string, List<string>> excelDict = new Dictionary<string, List<string>>();
-                
+
                 // Assign each column header's value the column list as a key value pair.
                 for (int col = start.Column; col <= end.Column; col++)
                 {
@@ -119,12 +121,12 @@ namespace PersonInfoWPFApp
                 }
 
                 // Add each worksheet cell as data in the dictionary.
-                for (int row = start.Row+1; row <= end.Row; row++)
+                for (int row = start.Row + 1; row <= end.Row; row++)
                 {
                     for (int col = start.Column; col <= end.Column; col++)
                     {
-                        string current_header_key = worksheet.Cells[1, col].Value.ToString();
-                        string current_data_value = worksheet.Cells[row, col].Value.ToString();
+                        string current_header_key = worksheet.Cells[1, col].Value?.ToString();
+                        string current_data_value = worksheet.Cells[row, col].Value?.ToString();
                         excelDict[current_header_key].Add(current_data_value);
                     }
                 }
@@ -165,7 +167,6 @@ namespace PersonInfoWPFApp
 
         public void WriteToExcelFile(List<Person> people, string filePath)
         {
-
             FileInfo excel_file = new FileInfo(filePath);
 
             using var package = new ExcelPackage(excel_file);
@@ -195,7 +196,7 @@ namespace PersonInfoWPFApp
         }
 
         public void AppendToExcelFile(List<Person> people, string filePath)
-        { 
+        {
             List<Person> peopleFromFile = ReadFromExcelFile(filePath);
             for (int i = 0; i < people.Count; i++)
             {

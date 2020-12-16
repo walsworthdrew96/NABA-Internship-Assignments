@@ -4916,11 +4916,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Drew\\source\\repos\\PersonInfoConsoleApp\\PersonInfoConsoleApp\\PersonInfoConsoleApp.csproj",
+      "projectUniqueName": "C:\\Users\\Drew\\Desktop\\NABA Assignments\\deployment\\PersonInfoSQLServerConsoleApp\\PersonInfoConsoleApp\\PersonInfoConsoleApp\\PersonInfoConsoleApp.csproj",
       "projectName": "PersonInfoConsoleApp",
-      "projectPath": "C:\\Users\\Drew\\source\\repos\\PersonInfoConsoleApp\\PersonInfoConsoleApp\\PersonInfoConsoleApp.csproj",
+      "projectPath": "C:\\Users\\Drew\\Desktop\\NABA Assignments\\deployment\\PersonInfoSQLServerConsoleApp\\PersonInfoConsoleApp\\PersonInfoConsoleApp\\PersonInfoConsoleApp.csproj",
       "packagesPath": "C:\\Users\\Drew\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Drew\\source\\repos\\PersonInfoConsoleApp\\PersonInfoConsoleApp\\obj\\",
+      "outputPath": "C:\\Users\\Drew\\Desktop\\NABA Assignments\\deployment\\PersonInfoSQLServerConsoleApp\\PersonInfoConsoleApp\\PersonInfoConsoleApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -4980,7 +4980,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
       }
     }
   }
