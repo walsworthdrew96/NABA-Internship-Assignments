@@ -1,5 +1,8 @@
 # NABA Internship Assignments
 
+## Note:
+### This repository does not include the final project from this internship. It is located in another GitHub repository called "PersonInfoAPI".
+
 ## Description
 The projects listed here were created during my internship at New American Business Association (NABA).
 **The technologies used include:**
@@ -8,10 +11,10 @@ The projects listed here were created during my internship at New American Busin
 * .NET Framework (To build .NET Framework Apps)
     * Console App
     * WPF
-* Azure (To deploy and use CI/CD)
+    * ASP.NET Core Web API (Local)
+* Azure (To host a remote SQL Database)
 * MS SQL Server (To set up a database, tables, and store records for data persistence)
-* MS SQL Server Compact 4.0 (To set up a database and tables using an older technology)
-* React (For dynamic front end webpage design)
+* MS SQL Server Compact 4.0 (To set up a database and tables using a compact set of .DLL files)
 * EPPlus (For Excel Files)
 
 ## Console App
