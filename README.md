@@ -24,13 +24,16 @@ The projects listed here were created during my internship at New American Busin
 ## WPF App
 
 * WPF App with the ability to read and write from a Text File (.txt), an Excel File (.xlsx), MS Access, MS SQL Server and an Azure SQL Database.
+* WPF App with the ability to read and write form a Text File (.txt), an Excel File (.xlsx), and MS Access, MS SQL Server, and an Azure SQL Database via a Web API.
 
-### SQL Server Database Contents
+### SQL/Access Database Contents
+
+#### Each database contains a single table named "Person" which contains an Id, First Name, and Last Name.
 
 #### Person Table
 
-First  Name  | Last Name
-------------- | -------------
-John  | Smith
-Jane  | Doe
-... | ...
+Id  | First  Name  | Last Name
+--- | ------------ | ---------
+1   | John         | Smith
+2   | Jane         | Doe
+... | ...          | ...
