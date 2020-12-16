@@ -11,7 +11,7 @@ The projects listed here were created during my internship at New American Busin
 * .NET Framework (To build .NET Framework Apps)
     * Console App
     * WPF
-    * ASP.NET Core Web API (Local)
+    * ASP.NET Core Web API (Locally Hosted)
 * Azure (To host a remote SQL Database)
 * MS SQL Server (To set up a database, tables, and store records for data persistence)
 * MS SQL Server Compact 4.0 (To set up a database and tables using a compact set of .DLL files)
