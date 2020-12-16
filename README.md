@@ -1,7 +1,7 @@
 # NABA Internship Assignments
 
 ## Note:
-### This repository does not include the final project from this internship. It is located in another GitHub repository called "PersonInfoAPI".
+### This repository does not include my final project from this internship. It is located in another GitHub repository called "PersonInfoAPI".
 
 ## Description
 The projects listed here were created during my internship at New American Business Association (NABA).
