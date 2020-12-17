@@ -5,6 +5,7 @@
 
 ## Description
 The projects listed here were created during my internship at <a href="https://naba4u.org/">The New American Business Association (NABA)</a>.
+
 **The technologies used include:**
 * C# (Main programming language)
 * JavaScript (Website scripting)
