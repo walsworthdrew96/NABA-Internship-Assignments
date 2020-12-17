@@ -28,7 +28,7 @@ The projects listed here were created during my internship at <a href="https://n
 * WPF App with the ability to read and write form a Text File (.txt), an Excel File (.xlsx), and MS Access, MS SQL Server, and an Azure SQL Database via a Web API.
 
 ## ASP.NET Core 3.1 Web API (Locally Hosted)
-* A Web API with the ability to make calls to an database access class to perform CRUD operations on a database.
+* A Web API with the ability to make calls to a database access class to perform CRUD operations on a database.
 
 ### SQL/Access Database Contents
 
