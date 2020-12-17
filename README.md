@@ -4,7 +4,7 @@
 ### This repository does not include my final project from this internship. It is located in another GitHub repository called "PersonInfoAPI".
 
 ## Description
-The projects listed here were created during my internship at New American Business Association (NABA).
+The projects listed here were created during my internship at <a href="https://naba4u.org/">The New American Business Association (NABA)</a>.
 **The technologies used include:**
 * C# (Main programming language)
 * JavaScript (Website scripting)
